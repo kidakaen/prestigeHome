@@ -1,0 +1,889 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+<style>@import url('https://fonts.googleapis.com/css?family=Roboto');
+</style>
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Clear Fix */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+/* End of Clear Fix */
+
+body {
+    background-color: gray;
+    width: 100%;
+}
+
+body p {
+    font-family: 'Lora', serif;
+    font-size: 10pt;
+}
+
+.wrapper {
+    background-color: white;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #111828;
+    height: 140px;
+}
+
+.header img {
+    width: 30%;
+    padding: 20px;
+}
+
+flex-nav {
+    display: flex;
+}
+
+.flex-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: tan;
+    display: flex;
+    ..0.0 height: 40px;
+}
+
+.flex-nav li {
+    border: 1px solid grey;
+    display: flex;
+    flex: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+    /* IE6-9 */
+}
+
+.flex-nav a {
+    text-decoration: none;
+    font-size: 13pt;
+    margin: auto;
+    text-decoration: none;
+    color: gray;
+}
+
+.flex-nav li:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fceabb+0,fccd4d+50,f8b500+51,fbdf93+100;Orange+3D+%235 */
+    background: rgb(252, 234, 187);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(252, 234, 187, 1) 0%, rgba(252, 205, 77, 1) 50%, rgba(248, 181, 0, 1) 51%, rgba(251, 223, 147, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(252, 234, 187, 1) 0%, rgba(252, 205, 77, 1) 50%, rgba(248, 181, 0, 1) 51%, rgba(251, 223, 147, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(252, 234, 187, 1) 0%, rgba(252, 205, 77, 1) 50%, rgba(248, 181, 0, 1) 51%, rgba(251, 223, 147, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=0);
+    /* IE6-9 */
+}
+
+#subpageHeroSlide {
+    background-color: orange;
+    height: 300px;
+}
+
+#subpageHeroSlide img {
+    height: 300px;
+    width: 1020px;
+}
+
+#homeHeroSlide {
+    background-color: orange;
+    height: 400px;
+}
+
+#homeHeroSlide img {
+    height: 400px;
+    width: 1020px;
+}
+
+#homeRowOne {
+    background-color: #111828;
+    height: 240px;
+    display: flex;
+}
+
+#hro_guts {
+    display: flex;
+    margin: auto;
+}
+
+#hro_info {
+    flex: 2;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#hro_info h1 {
+    color: white;
+    font-size: 30pt;
+    padding-bottom: 15px;
+}
+
+#hro_info p {
+    padding: 10px, 0, 10px, 0;
+    font-size: 12pt;
+    line-height: 18pt;
+    color: white;
+}
+
+#hro_schedule {
+    flex: 1;
+}
+
+.scheduleNow {
+    height: 173px;
+    width: 336px;
+    border: 15px solid #CFB061;
+    border-radius: 10.8px;
+    margin-right: 42.5px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #BA9C59;
+    float: right;
+}
+
+.scheduleNow p {
+    text-align: center;
+    color: white;
+    font-size: 13pt;
+    line-height: 15pt;
+    padding: 14px 3px 5px 3px;
+    margin-bottom: 14px;
+}
+
+.scheduleNow button {
+    height: 33px;
+    width: 172px;
+    border-radius: 100px;
+    background-color: white;
+    float: left;
+    margin-left: 61px;
+    font-size: 12pt;
+}
+
+#homeRowTwo {
+    background-color: green;
+    height: 325px;
+    display: flex;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+    /* IE6-9 */
+}
+
+.infomenubar {
+    display: flex;
+    height: 42px;
+    width: 100%;
+    margin: 0px;
+}
+
+.infomenubar h1 {
+    margin: auto;
+    font-size: 18pt;
+    color: grey;
+}
+
+#homeTheater_Info {
+    flex: 1;
+    height: 325px;
+    float: left;
+}
+
+#homeRowTwo figure {
+    background-color: #111828;
+    width: 100%;
+}
+
+#HT_Image {
+    display: flex;
+}
+
+#HT_Image img {
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 240px;
+    height: 144px;
+}
+
+#customAudio_Info {
+    flex: 1;
+    height: 325px;
+    float: left;
+}
+
+#CA_Image {
+    display: flex;
+}
+
+#CA_Image img {
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 240px;
+    height: 144px;
+}
+
+#centralVac_Info {
+    flex: 1;
+    height: 325px;
+    float: left;
+}
+
+#CV_Image {
+    display: flex;
+}
+
+#CV_Image img {
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 240px;
+    height: 144px;
+}
+
+#homeAutomation_Info {
+    flex: 1;
+    height: 325px;
+    float: left;
+}
+
+#HA_Image {
+    display: flex;
+}
+
+#HA_Image img {
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0px;
+    width: 240px;
+    height: 144px;
+}
+
+#homeRowTwo p {
+    padding: 19px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#homeRowTwo button {
+    width: 88px;
+    height: 25px;
+    border-radius: 100px;
+    float: right;
+    color: white;
+    margin-right: 76px;
+    border: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfb061+0,ba9c59+100 */
+    background: rgb(207, 176, 97);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(207, 176, 97, 1) 0%, rgba(186, 156, 89, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(207, 176, 97, 1) 0%, rgba(186, 156, 89, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(207, 176, 97, 1) 0%, rgba(186, 156, 89, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cfb061', endColorstr='#ba9c59', GradientType=0);
+    /* IE6-9 */
+}
+
+#homeRowThree {
+    background-color: #111828;
+    height: 240px;
+    color: black;
+    display: flex;
+}
+
+#homeRowThree figure {
+    flex: 1
+}
+
+#touchtext {
+    flex: 2;
+    padding: 15px;
+}
+
+#touchtext h1 {
+    color: white;
+    font-size: 30pt;
+    padding: 10px 0 20px 0;
+}
+
+#touchtext p {
+    color: white;
+    font-size: 12pt;
+    line-height: 18pt;
+    padding-bottom: 5px;
+}
+
+#box_image {
+    background-color: yellow;
+    width: 345px;
+    height: 240px;
+}
+
+#homeRowFour {
+    background-color: tan;
+    height: 400px;
+}
+
+#homeRowFour h1 {
+    height: 76;
+    line-height: 76px;
+    text-align: center;
+    font-size: 30pt;
+    color: white;
+}
+
+#homeRowFour h1 {
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 30pt;
+    line-height: 10pt;
+}
+
+#homeRowFour h2 {
+    padding-top: 40px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 25pt;
+    line-height: 10pt;
+}
+
+#homeRowFour p {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 10pt;
+    font-style: italic;
+    padding: 32px 32px 30px 32px;
+    line-height: 15pt;
+}
+
+#flags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: tan;
+    display: flex;
+    width: 100%;
+}
+
+.pennent {
+    margin-left: 5px;
+    margin-right: 5px;
+    flex: 1 1 100%;
+    width: 300px;
+    height: 306px;
+    background-color: #111828;
+    border: 10px solid white;
+    border-radius: 10px;
+}
+
+#flag1 {
+    margin-left: 10px;
+}
+
+#flag3 {
+    margin-right: 10px;
+}
+
+.consultationForm {
+    background-color: #111828;
+    height: 488px;
+}
+
+.consultationForm h1 {
+    color: white;
+    font-size: 39pt;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.hrf_form {
+    display: flex;
+}
+
+form.contactUsForm {
+    margin-left: 100px;
+}
+
+.contactUsForm {
+    width: 700px;
+    margin: auto;
+}
+
+.contactUsForm label {
+    font-size: 17pt;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 100px;
+    text-align: left;
+    margin-right: 10px;
+    color: white;
+    display: inline-block;
+}
+
+.contactUsForm input {
+    border-radius: 3px;
+    height: 32px;
+    width: 229px;
+    padding: 5px 3px;
+    border: .25px solid grey;
+    color: black;
+    padding-left: 5px;
+}
+
+.contactUsForm textarea[name="message"] {
+    width: 576px;
+    border-radius: 3px;
+}
+
+#messageInput {
+    margin-top: 20px;
+    width: 700px;
+}
+
+#messageInput label {
+    vertical-align: top;
+    padding-top: 0;
+}
+
+#messageInput textarea {
+    vertical-align: top;
+}
+
+.contactUsForm button {
+    background-color: white;
+    width: 160px;
+    height: 40px;
+    float: right;
+    margin: 10px;
+    font-size: 14pt;
+}
+
+footer {
+    height: 100px;
+    background-color: #111828;
+    display: flex;
+}
+
+#footer_contact {
+    display: inline-block;
+    flex: 1;
+}
+
+#footer_phone {
+    display: flex;
+    color: white;
+    margin: 5px 0 5px 10px;
+}
+
+#footer_phone p {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footer_phone img {
+    padding: 0 10px 0 15px;
+}
+
+#footer_web {
+    display: flex;
+    color: white;
+    margin: 5px 0 5px 10px;
+}
+
+#footer_web p {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footer_web img {
+    padding: 0 7px 0 15px;
+}
+
+#footer_email {
+    display: flex;
+    color: white;
+    margin: 5px 0 5px 10px;
+}
+
+#footer_email p {
+    flex: .75;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footer_email img {
+    padding: 0 9px 0 15px;
+}
+
+.socialMediaLinks {
+    text-decoration: none;
+    text-align: right;
+    flex: 1;
+    margin: 40px 40px 0 20px;
+}
+
+.socialMediaLinks a {
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+/*THEATER PAGE*/
+
+#theaterRowOne {
+    background-color: #111828;
+    height: 240px;
+    display: flex;
+}
+
+#tro_guts {
+    display: flex;
+    margin: auto;
+}
+
+#tro_info {
+    flex: 2;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#tro_info h1 {
+    text-align: left;
+    color: white;
+    font-size: 30pt;
+    padding-bottom: 15px;
+}
+
+#tro_info p {
+    padding: 10px, 0, 10px, 0;
+    font-size: 12pt;
+    line-height: 18pt;
+    color: white;
+}
+
+#tro_schedule {
+    flex: 1;
+}
+
+#theaterRowThree {
+    display: flex;
+    margin: 20px;
+}
+
+#theaterRowThree img {
+    width: 345px;
+    height: 240px;
+}
+
+#surround_image {
+    flex: 1;
+}
+
+#surround_text {
+    flex: 2;
+    margin: 15px;
+    font-size: 15pt;
+    line-height: 15pt;
+}
+
+#surround_text h1 {
+    font-size: 30pt;
+    padding-bottom: 15px;
+}
+
+#surround_text p {
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+#theaterRowFour {
+    display: flex;
+    margin: 20px;
+}
+
+#projector_image {
+    flex: 1;
+}
+
+#projector_text {
+    flex: 2;
+    margin: 15px;
+    font-size: 15pt;
+    line-height: 15pt;
+}
+
+#projector_text h1 {
+    font-size: 30pt;
+    padding-bottom: 15px;
+}
+
+#projector_text p {
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+#theaterRowFive {
+    display: flex;
+    margin: 20px;
+}
+
+#screens_image {
+    flex: 1;
+}
+
+#screens_text {
+    flex: 2;
+    margin: 15px;
+    font-size: 15pt;
+    line-height: 15pt;
+}
+
+#screens_text h1 {
+    font-size: 30pt;
+    padding-bottom: 15px;
+}
+
+#screens_text p {
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+#theaterRowSix {
+    display: flex;
+    margin: 20px;
+}
+
+#seating_image {
+    flex: 1;
+}
+
+#seating_text {
+    flex: 2;
+    margin: 15px;
+    font-size: 15pt;
+    line-height: 15pt;
+}
+
+#seating_text h1 {
+    font-size: 30pt;
+    padding-bottom: 15px;
+}
+
+#seating_text p {
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+
+/*AUDIO PAGE*/
+
+#audioheader {
+    height: 100px;
+    display: flex;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+}
+
+#audioheader h1 {
+    flex: 1;
+    margin: auto;
+    text-align: center;
+    font-size: 30pt;
+}
+
+.audiotitletext {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #01061A;
+    font-size: 20pt;
+    padding: 20px 0px 20px 0px;
+    margin: 0 10px 0 10px;
+    color: white;
+    text-align: center;
+}
+
+.audiodescription {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 18pt;
+    line-height: 18pt;
+    margin: 0 10px 0 10px;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+}
+
+#audioRowTwo-1 {
+    background-color: tan;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#lighting {
+    flex: 1;
+}
+
+#blind {
+    flex: 1;
+}
+
+#climate {
+    flex: 1;
+}
+
+#audio {
+    flex: 1;
+}
+
+#audioRowTwo-2 {
+    background-color: tan;
+    padding: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#media {
+    flex: 1;
+}
+
+#theater {
+    flex: 1;
+}
+
+#security {
+    flex: 1;
+}
+
+#surveillance {
+    flex: 1;
+}
+
+
+}
+
+/*
+#centralRowTwo {
+    background-color: tan;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+#brands {
+    flex: 1;
+}
+#systems {
+    flex: 1;
+}
+#parts {
+    flex: 1;
+}
+*/
+
+}
+*/
